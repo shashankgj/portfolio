@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: url('https://img.freepik.com/premium-photo/simple-white-background-with-smooth-lines-light-colors_476363-5558.jpg') center/cover no-repeat;
+            background-color: #000;
+            color: #5397c4cf;
+            font-family: 'Helvetica Neue', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: rgba(12, 1, 1, 0.347);
+        }
+
+        .hero {
+            background: url('https://img.freepik.com/premium-photo/simple-white-background-with-smooth-lines-light-colors_476363-5558.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #5397c4cf;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .projects img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.4s ease;
+        }
+
+        .projects img:hover {
+            transform: scale(1.05);
+        }
+
+        .accordion-button {
+            background-color: #5397c4cf;;
+            color: #fff;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #5397c4cf;
+        }
+
+        .accordion-body {
+            background-color:  #5397c4cf;
+            color: #ccc;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background-color: #5397c4cf;
+            border: none;
+            color: #100c0c;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #efeded;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Full Stack Developer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>SHASHANK G J</h1>
+            <p>Passionate Developer | JavaFullStack Developer</p>
+            <a href="#about" class="btn btn-outline-dark mt-3">Explore More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p>Self-motivated and enthusiastic software programmer with a strong background in Java, Python,
+                        object-oriented
+                        programming, and data structures. Skilled in SQL for database management and have knowledge
+                        about front-end web
+                        technologies such as HTML, CSS, and JavaScript. Experienced in developing simple web
+                        applications and backend
+                        logic and database integration. Fast learner with good problem-solving skills, ready to make
+                        contributions towards
+                        innovative projects and develop skills in an interactive development environment.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="mt-3">Sanjeevini-The Hospital Communication System</h5>
+                    <p> A web project developed with HTML, CSS, and SQL, Hospital communication
+                        systems are platforms that facilitate the ability for healthcare providers and supporting staff
+                        to connect, collaborate, and exchange information in order to treat patients. They support the
+                        collaboration of the many departments and roles within a single hospital or a group of
+                        affiliated medical facilities.Medical workers have a lot of information coming at them as they
+                        handle patients, manage equipment, administer medicine, and keep the facility operating. At the
+                        nurses station alone they are monitoring patients on screens around the clock. </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mt-3">Credit card fraud detection using ML</h5>
+                    <p>A machine learning project that aims to identify fraudulent credit card transactions
+                        through algorithms such as Logistic Regression, Random Forest, and SVM. The model
+                        processes patterns of transactions and identifies suspicious activity at high accuracy
+                        rates. It assists in minimizing financial risk by catching fraud in real time.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mt-3">“MetroMate: Your Digital Travel Partner” </h5>
+                    <p>The Next-Gen Metro Management and Ticketing System is designed as a comprehensive web-based
+                        solution that replaces conventional paper-based ticketing with secure, digital operations. It
+                        enables passengers to register, log in, book tickets, make payments, and receive QR-code-based
+                        e-tickets directly through an interactive online interface. The platform also provides
+                        administrators with a centralized dashboard to manage routes, monitor passenger records, update
+                        train schedules, and generate reports with ease.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="accordion" id="skillsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Java
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#skillsAccordion">
+                        <div class="accordion-body">
+                            Core Java, OOPs concepts, Exception handling, Collections, Multithreading, File I/O,
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            HTML
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#skillsAccordion">
+                        <div class="accordion-body">
+                            Semantic tags, Structure, Accessibility awareness.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            CSS
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#skillsAccordion">
+                        <div class="accordion-body">
+                            Responsive design, Animations, Frameworks like Bootstrap.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            JavaScript
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#skillsAccordion">
+                        <div class="accordion-body">
+                            ES6+ features, DOM manipulation, Event handling, Fetch API, Promises, Async/Await.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                            crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+                            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+                            crossorigin="anonymous"></script>
+                        <button type="submit" class="btn btn-outline-dark w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024.All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist
+        /js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous">
+        </script>
+</body>
